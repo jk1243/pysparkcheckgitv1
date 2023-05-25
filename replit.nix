@@ -3,6 +3,11 @@
     pkgs.python310Full
     pkgs.replitPackages.prybar-python310
     pkgs.replitPackages.stderred
+    # Packages for Java
+    pkgs.graalvm17-ce
+    pkgs.maven
+    pkgs.replitPackages.jdt-language-server
+    pkgs.replitPackages.java-debug
   ];
   env = {
     PYTHON_LD_LIBRARY_PATH = pkgs.lib.makeLibraryPath [
